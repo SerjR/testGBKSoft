@@ -1,0 +1,78 @@
+.tabsColumn {
+  background-color: $white;
+  // min-height: 100vh;
+  flex: 1;
+  margin: 0;
+  padding: 60px 30px 20px 10px;
+}
+
+.tabs {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: transparent;
+  border: none !important;
+}
+
+.tabs__switcher {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $gray;
+  position: relative;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.tabs__swithc {
+  border: none !important;
+  background-color: transparent !important;
+  outline: none !important;
+  font-family: 'Roboto' !important;
+  font-weight: 500 !important;
+  font-size: 14pt !important;
+  color: $black !important;
+  padding: 0 !important;
+  // padding-bottom: 15px;
+  margin: 0 20px 0 0 !important;
+  position: relative;
+  top: 2px !important;
+
+  a {
+    background-color: transparent;
+    outline: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+.tabs__swithc:hover {
+  border-bottom: 2px solid $blue !important;
+
+  a {
+    color: $blue !important;
+  }
+}
+
+.tabs__swithc[aria-selected='true'] {
+  border-bottom: 2px solid $blue !important;
+
+  a {
+    color: $blue !important;
+  }
+}
+
+.tabs__content {
+  padding: 20px 0 !important;
+}
+@include mq(1024, 1279) {
+  .tabs__swithc {
+    a {
+      font-size: 12pt;
+    }
+  }
+};
+@include mq-max(1023) {
+  .tabsColumn {
+    display: none;
+  }
+};

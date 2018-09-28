@@ -1,0 +1,125 @@
+.table {}
+
+.table__head {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.table__itemContainer {
+  position: relative;
+}
+
+.table__label {
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.table__select {
+  width: calc(250px);
+  border-radius: 3px;
+  border: 1px solid $gray;
+  padding: 9px 20px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../img/arrow_select.png") no-repeat 95% 50%;
+  font-family: 'Roboto' !important;
+  // font-weight: 400 !important;
+  font-size: 12pt !important;
+  color: $gray;
+  cursor: pointer;
+
+  option {
+    width: calc(250px) !important;
+    color: $black;
+  }
+}
+
+.table__input {
+  width: calc(250px - 20px*2);
+  border-radius: 3px;
+  border: 1px solid $gray;
+  padding: 10px 20px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12pt;
+  color: $black;
+}
+
+.table__input::placeholder {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13pt;
+  color: $gray;
+}
+
+.table__button {
+  border-radius: 3px;
+  padding: 10px 60px;
+  background-color: $blue;
+  border: 0;
+  color: $white;
+  transition: all 0.4s ease;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.table__button:hover {
+  background-color: $green;
+  transition: all 0.4s ease;
+}
+
+.table__data {
+  margin-top: 20px;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table__data td,
+.table__data th {
+  border: 1px solid $gray;
+  padding: 8px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 11pt;
+}
+
+.table__data tr:nth-child(even) {
+  background-color: #fdfeff;
+}
+
+.table__data th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 11pt;
+  color: $black;
+  border-bottom: 2px solid $gray;
+}
+@include mq(1024, 1279) {
+  .table__input {
+    width: calc(195px - 20px*2);
+    margin-right: 13px;
+  }
+
+  .table__select {
+    width: calc(235px - 20px*2);
+    width: calc(235px - 20px*2);
+    margin-right: 13px;
+  }
+
+  .table__button {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+};

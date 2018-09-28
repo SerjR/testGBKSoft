@@ -1,0 +1,79 @@
+.label {
+  border-radius: 3px;
+  padding: 4px 8px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 9pt;
+  color: $white;
+  margin-right: 10px;
+}
+
+.label_green {
+  background-color: $green;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.label_gray {
+  background-color: $gray;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.label_red {
+  background-color: $light-red;
+  color: $red;
+  font-weight: 400;
+  font-size: 11pt;
+  position: relative;
+  left: -5px;
+  padding: 2px 5px;
+}
+
+.tableLabel {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 11pt;
+  color: $black;
+  position: relative;
+}
+
+.tableLabel_bold {
+  font-weight: 700;
+}
+
+.tableLabel_green {
+  color: $green;
+}
+
+.tableLabel_up {
+  font-weight: 400;
+}
+
+.tableLabel_up:before {
+  color: $green;
+  content: '\2191';
+  position: relative;
+  top: -2px;
+}
+
+.tableLabel_down {
+  font-weight: 400;
+}
+
+.tableLabel_down:before {
+  color: $red;
+  content: '\2193';
+  position: relative;
+  top: -2px;
+}
+
+.tableLabel_right:before {
+  content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 127.986 199.99999' style='fill:#6699ea'> <polygon points='163.695,171.119 92.277,99.702 163.695,28.285 135.412,0 35.709,99.702 135.412,199.404' transform='matrix(-1,0,0,-1.0029889,163.695,199.99999)'/> </svg> ");
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 3px;
+  left: 33px;
+}

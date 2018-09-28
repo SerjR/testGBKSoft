@@ -1,0 +1,119 @@
+.navColumn {
+  position: relative;
+  background-color: $navy-blue;
+  width: 240px;
+  // height: 100%;
+  min-height: 100vh;
+  transition: width 0.4s ease;
+
+  .navColumn__header {
+    height: 60px;
+  }
+
+  .navColumn__button {
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: fill 0.4s ease;
+    cursor: pointer;
+  }
+
+  .navColumn__button:hover {
+    fill: $light-blue;
+    transition: fill 0.4s ease;
+  }
+
+  .navColumn__menu {}
+
+  .navColumn__menuItem {
+    img,
+    svg {
+      min-width: 20px;
+      max-width: 20px;
+      height: 20px;
+      transition: fill 0.4s ease;
+    }
+  }
+
+  .navColumn__menuLink {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: $dark-blue;
+    text-decoration: none;
+    transition: color 0.4s ease;
+
+    span {
+      opacity: 1;
+      transition: opacity 0.4s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-left: 10px;
+      max-width: calc(100% - 20px);
+    }
+  }
+
+  .navColumn__menuLink:hover {
+    background-color: $light-navy-blue;
+  }
+
+  .navColumn__menuLink_textHover:hover {
+    background-color: unset;
+    color: $white;
+    transition: color 0.4s ease;
+
+    svg {
+      fill: $white;
+      transition: fill 0.4s ease;
+    }
+  }
+
+  .navColumn__submenu {
+    position: relative;
+  }
+
+  .navColumn__subMenuItem {
+    .navColumn__menuLink {
+      padding-left: 50px;
+    }
+
+    .navColumn__menuLink:before {
+      position: relative;
+      right: -3px;
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+      background-color: $dark-blue;
+    }
+  }
+
+  .navColumn__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    list-style: none;
+  }
+}
+
+.navColumn_close {
+  width: 61px;
+  transition: width 0.4s ease;
+
+  .navColumn__menuItem {}
+
+  .navColumn__menuLink {
+    span {
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+  }
+}
+@include mq(1024, 1599) {
+  .navColumn {
+    position: absolute;
+    z-index: 1;
+  }
+};

@@ -1,0 +1,22 @@
+.mainHeading {
+  border: 1px solid $gray;
+  border-radius: 3px 3px 0 0;
+  padding: 30px;
+
+  .mainHeading__title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20pt;
+    color: $black;
+    margin-bottom: 15px;
+  }
+
+  .mainHeading__subTitle {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 11pt;
+    color: $gray;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}

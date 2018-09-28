@@ -1,0 +1,22 @@
+.mainStats {
+  border: 1px solid $gray;
+  padding: 20px 30px 10px;
+
+  .mainStats__table {
+    width: 100%;
+
+    tr {
+      height: 24px;
+    }
+  }
+
+  .mainStats__tableTitle {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 11pt;
+  }
+}
+
+.mainStats_borderTop_none {
+  border-top: none;
+}

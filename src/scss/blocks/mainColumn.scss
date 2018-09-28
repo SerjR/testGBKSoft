@@ -1,0 +1,31 @@
+.mainColumn {
+  background-color: $white;
+  width: calc(430px - 30px - 10px);
+  // min-height: 100vh;
+  padding: 60px 10px 20px 30px;
+  // position: relative;
+}
+
+.mainColumn__arrow {
+  position: absolute;
+  top: 20px;
+}
+
+.mainColumn__arrowButton {
+  cursor: pointer;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@include mq(1024, 1599) {
+  .mainColumn {
+    margin-left: 60px;
+  }
+};
+@include mq-max(1023) {
+  .mainColumn__arrow {
+    display: none;
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uk">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Title</title>
+      <link rel="icon" href="img/favicon.ico"/>
+
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+      <link href="libs/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+   </head>
+
+   <body>
+      
+
+   <div class="wrapper">
+     <div class="navColumn navColumn_close">
+  <div class="navColumn__header">
+    <svg id="navColumnButton" class="navColumn__button" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="#577594">
+      <path d="M19.993,41H40.988V38.165H19.993V41Zm0-7.082H40.988V31.083H19.993v2.833Zm0-9.915v2.833H40.988V24H19.993Z" transform="translate(-20 -24)"/>
+    </svg>
+  </div>
+  <ul class="navColumn__menu">
+    <li class="navColumn__menuItem"><a class="navColumn__menuLink" href="#"><img src="img/aitcrafts.svg" alt="Aircraft"><span>Aircraft</span></a></li>
+    <li class="navColumn__menuItem"><a class="navColumn__menuLink" href="#"><img src="img/mostrecensales.svg" alt="Recent Sales"><span>Recent Sales</span></a></li>
+    <li class="navColumn__menuItem"><a class="navColumn__menuLink" href="#"><img src="img/market_updates.svg" alt="Market Updates"><span>Market Updates</span></a></li>
+    <li class="navColumn__menuItem"><a class="navColumn__menuLink" href="#"><img src="img/fmv.svg" alt="FMV"><span>FMV</span></a>
+      <ul class="navColumn__submenu">
+        <li class="navColumn__subMenuItem"><a class="navColumn__menuLink" href="#"><span>Manage Prices</span></a></li>
+        <li class="navColumn__subMenuItem"><a class="navColumn__menuLink" href="#"><span>Compare Costs</span></a></li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="navColumn__footer">
+    <li class="navColumn__menuItem">
+       <a class="navColumn__menuLink navColumn__menuLink_textHover" href="#">
+         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="#597897">
+           <path
+             d="M35.959,931.666H25.641a0.835,0.835,0,1,0,0,1.667H35.959l-1.152,1.077a0.8,0.8,0,0,0,0,1.179,0.936,0.936,0,0,0,1.26,0l2.672-2.5a0.811,0.811,0,0,0,.059-0.061L38.821,933c0.01-.012.02-0.024,0.029-0.037s0.016-.023.023-0.035l0.022-.035c0.007-.012.013-0.024,0.019-0.037s0.013-.024.018-0.037,0.01-.024.014-0.036,0.011-.027.015-0.041,0.007-.024.01-0.037,0.008-.028.011-0.042,0-.029.007-0.043,0-.025.006-0.037a0.758,0.758,0,0,0,0-.081h0v0a0.758,0.758,0,0,0,0-.081c0-.012,0-0.024-0.006-0.036s0-.03-0.007-0.044-0.007-.028-0.011-0.042-0.006-.025-0.01-0.037-0.01-.027-0.015-0.04-0.009-.025-0.015-0.037l-0.018-.036c-0.006-.013-0.012-0.026-0.02-0.038s-0.014-.022-0.021-0.033-0.015-.025-0.024-0.037-0.018-.024-0.028-0.035-0.015-.021-0.024-0.031-0.037-.039-0.056-0.058l0,0-2.672-2.5a0.935,0.935,0,0,0-1.26,0,0.8,0.8,0,0,0,0,1.179ZM20.891,940H32.172a0.864,0.864,0,0,0,.891-0.834v-3.333a0.893,0.893,0,0,0-1.781,0v2.5h-9.5V926.666h9.5v2.5a0.893,0.893,0,0,0,1.781,0v-3.333A0.863,0.863,0,0,0,32.172,925H20.891a0.863,0.863,0,0,0-.891.833v13.333A0.864,0.864,0,0,0,20.891,940Z"
+             transform="translate(-20 -925)"/>
+         </svg>
+         <span>Logout</span></a>
+    </li>
+  </ul>
+</div>
+
+     <div class="mainColumn">
+  <div class="mainColumn__arrow">
+    <span id="mainColumnArrowButton" class="mainColumn__arrowButton">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="199.404px" height="199.404px" viewBox="0 0 199.404 199.404" fill="#d4dfe8">
+       <polygon points="135.412,0 35.709,99.702 135.412,199.404 163.695,171.119 92.277,99.702 163.695,28.285 	"/>
+      </svg>
+    </span>
+  </div>
+  <div class="mainHeading">
+  <p class="mainHeading__title">MfgYear Make Model Serial Number</p>
+  <div class="mainHeading__labels">
+    <span class="label label_green">confirmed</span>
+    <span class="label label_gray">ghost</span>
+  </div>
+  <p class="mainHeading__subTitle">Published to soljets.com</p>
+</div>
+
+  <div class="mainStats mainStats_borderTop_none">
+  <table class="mainStats__table">
+    <tr>
+      <td class="mainStats__tableTitle">Fair Market Value:</td>
+      <td class="tableLabel tableLabel_bold">$955,500</td>
+    </tr>
+    <tr>
+      <td class="mainStats__tableTitle">Status:</td>
+      <td class="tableLabel tableLabel_bold tableLabel_green">For Sale</td>
+    </tr>
+    <tr>
+      <td class="mainStats__tableTitle">Days on Market:</td>
+      <td class="tableLabel">50</td>
+    </tr>
+    <tr>
+      <td class="mainStats__tableTitle">Ask Price:</td>
+      <td class="tableLabel tableLabel_bold">$955,500 <span class="tableLabel_up">11%</span></td>
+    </tr>
+    <tr>
+      <td class="mainStats__tableTitle">Take Price:</td>
+      <td class="tableLabel tableLabel_bold">$955,500 <span class="tableLabel_down">11%</span></td>
+    </tr>
+    <tr>
+      <td class="mainStats__tableTitle">Brokerage:</td>
+      <td class="tableLabel">AvPro</td>
+    </tr>
+    <tr>
+      <td class="mainStats__tableTitle">Damage:</td>
+      <td class="tableLabel">Low <span class="tableLabel_right"></td>
+    </tr>
+    <tr>
+      <td class="mainStats__tableTitle">Pedigree:</td>
+      <td class="tableLabel">Medium</td>
+    </tr>
+    <tr>
+      <td class="mainStats__tableTitle">Next Inspection:</td>
+      <td><span class="label label_red">mm/dd/yy</span></td>
+    </tr>
+    <tr>
+      <td class="mainStats__tableTitle"></td>
+      <td class="tableLabel tableLabel_bold">Inspection Type</td>
+    </tr>
+  </table>
+</div>
+
+  <div class="mainNotes mainNotes_borderTop_none">
+  <p class="mainNotes__title">Aircraft Notes:</p>
+  <form action="" class="mainNotes__form">
+    <textarea name="name" rows="2" placeholder="Press enter to poste note..."></textarea>
+
+    <button type="submit" name="button">
+      <div>
+        <svg xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 -31 512 450" version="1.1" width="512" height="450">
+          <path d="M 123.19531,229.73828 186.875,388.92578 269.77734,306.02344 411.91797,419 512,-31 0,182.26562 Z m 242.5,-131.6289 -156.71484,142.9414 -19.51953,73.56641 -36.0586,-90.16407 z m 0,0" id="path2" style="fill:#6699ea;fill-opacity:1"/>
+        </svg>
+
+      </div>
+    </button>
+  </form>
+  <div class="notes">
+    <div class="notes__singleNote">
+      <p class="notes__noteHead">mm/dd/yy by Cris S</p>
+      <div class="notes__noteText">Broker willing to take in the low 1's</div>
+    </div>
+    <div class="notes__singleNote">
+      <p class="notes__noteHead">mm/dd/yy by Cris S</p>
+      <div class="notes__noteText">Broker willing to take in the low 1's</div>
+    </div>
+    <div class="notes__singleNote">
+      <p class="notes__noteHead">mm/dd/yy by Cris S</p>
+      <div class="notes__noteText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+    </div>
+    <div class="notes__singleNote">
+      <p class="notes__noteHead">mm/dd/yy by Cris S</p>
+      <div class="notes__noteText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+     <div class="tabsColumn">
+  <div class="tabs" id="tabs">
+     <ul class="tabs__switcher">
+       <li class="tabs__swithc"><a href="#tabs-1">Overview</a></li>
+       <li class="tabs__swithc"><a href="#tabs-2">Maintenance</a></li>
+       <li class="tabs__swithc"><a href="#tabs-3">Transactions</a></li>
+       <li class="tabs__swithc"><a href="#tabs-4">Utilization</a></li>
+       <li class="tabs__swithc"><a href="#tabs-5">History</a></li>
+     </ul>
+     <div id="tabs-1" class="tabs__content">Overview content</div>
+     <div id="tabs-2" class="tabs__content">Maintenance content</div>
+     <div id="tabs-3" class="tabs__content">Transactions content</div>
+     <div id="tabs-4" class="tabs__content">Utilization content</div>
+     <div id="tabs-5" class="tabs__content">
+       <div class="table">
+  <div class="table__head">
+    <div class="table__itemContainer">
+      <label class="table__label" for="period">Period</label>
+      <select class="table__select" name="period" placeholder="Select">
+        <option value="">3 Months</option>
+        <option value="">6 Months</option>
+        <option value="">1 Year</option>
+        <option value="">Custom</option>
+      </select>
+    </div>
+    <div class="table__itemContainer">
+      <label class="table__label" for="fieldName">Field Name</label>
+      <input class="table__input" type="text" name="fieldName" value="" placeholder="Start typing...">
+    </div>
+    <button class="table__button" type="button" name="button">Apply</button>
+  </div>
+  <table class="table__data">
+    <tr>
+      <th>Date</th>
+      <th>Updated By</th>
+      <th>Field Name</th>
+      <th>Previous Value</th>
+      <th>New Value</th>
+    </tr>
+    <tr>
+      <td>mm/dd/yy</td>
+      <td>Name</td>
+      <td>Field Name</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mm/dd/yy</td>
+      <td>Name</td>
+      <td>Field Name</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mm/dd/yy</td>
+      <td>Name</td>
+      <td>Field Name</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+     </div>
+   </div>
+</div>
+
+   </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <!-- <script type="text/javascript" src="js/main.min.js"></script> -->
+   </body>
+
+</html>
